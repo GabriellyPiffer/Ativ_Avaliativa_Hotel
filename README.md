@@ -3,40 +3,40 @@
 ##  Capturas de Tela do Sistema
 
 ### Tela 1
-![Print 1](print1.png)
+![Print 1](./wireframes/print1.png)
 
 ### Tela 2
-![Print 2](print2.png)
+![Print 2](./wireframes/print2.png)
 
 ### Tela 3
-![Print 3](print3.png)
+![Print 3](./wireframes/print3.png)
 
 ### Tela 4
-![Print 4](print4.png)
+![Print 4](./wireframes/print4.png)
 
 ### Tela 5
-![Print 5](print5.png)
+![Print 5](./wireframes/print5.png)
 
 ### Tela 6
-![Print 6](print6.png)
+![Print 6](./wireframes/print6.png)
 
 ### Tela 7
-![Print 7](print7.png)
+![Print 7](./wireframes/print7.png)
 
 ### Tela 8
-![Print 8](print8.png)
+![Print 8](./wireframes/print8.png)
 
 ### Tela 9
-![Print 9](print9.png)
+![Print 9](./wireframes/print9.png)
 
 ### Tela 10
-![Print 10](print10.png)
+![Print 10](./wireframes/print10.png)
 
 ### Tela 11
-![Print 11](print11.png)
+![Print 11](./wireframes/print11.png)
 
 ### Tela 12
-![Print 12](print12.png)
+![Print 12](./wireframes/print12.png)
 
 ---
 
@@ -124,7 +124,7 @@ Principais operações testadas:
 
 ---
 
-# 📋 Estrutura do Sistema
+#  Estrutura do Sistema
 
 ```text
 hotelreservas/
