@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservas</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav>
+
+            <div class="logo-menu">
+                <img width="60" src="logo.png">
+                <h2>Hotel Reservas</h2>
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="inicio.html">
+                        <i class="fa-solid fa-bed"></i>
+                        Quartos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="reserva.html">
+                        <i class="fa-solid fa-calendar"></i>
+                        Reservas
+                    </a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-circle-info"></i>
+                    Sobre
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <main>
+
+            <div class="topo">
+
+                <div>
+                    <h1>Quartos Cadastrados</h1>
+                    <p>Gerencie os quartos do hotel</p>
+                </div>
+
+                <button onclick="cadastro.classList.remove('oculto')">
+                    <i class="fa-solid fa-plus"></i>
+                    Novo Quarto
+                </button>
+
+            </div>
+
+            <div class="tabela">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Imagem</th>
+                            <th>Nº Quarto</th>
+                            <th>Tipo</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="listaQuartos"></tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <div id="cadastro" class="modal oculto">
+
+        <div class="janela">
+
+            <h2>Cadastrar Quarto</h2>
+
+            <form id="formCad">
+
+                <label>Número</label>
+                <input type="number" id="numero" required>
+
+                <label>Tipo</label>
+
+                <select id="tipo" required>
+
+                    <option value="">Selecione...</option>
+                    <option value="Standard">Simples</option>
+                    <option value="Luxo">Luxo</option>
+                    <option value="Suíte">Suíte</option>
+                    <option value="Solteiro">Solteiro</option>
+
+                </select>
+
+                <label>Descrição</label>
+                <input type="text" id="descricao" required>
+
+                <label>Imagem</label>
+                <input type="text" id="imagem">
+
+                <br><br>
+
+                <button type="button"
+                    onclick="cadastro.classList.add('oculto')">
+
+                    Cancelar
+
+                </button>
+
+                <button type="submit">
+
+                    Salvar
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div id="detalhes" class="modal oculto">
+
+        <div class="janela">
+
+            <h2 id="tituloQuarto"></h2>
+
+            <p><b>Número</b></p>
+            <input type="number" id="numeroEdit" disabled>
+
+            <p><b>Tipo</b></p>
+
+            <select id="tipoEdit">
+
+                <option value="">Selecione...</option>
+                <option value="Standard">Simples</option>
+                <option value="Luxo">Luxo</option>
+                <option value="Suíte">Suíte</option>
+                <option value="Solteiro">Solteiro</option>
+
+            </select>
+
+            <p><b>Descrição</b></p>
+            <input type="text" id="descricaoEdit">
+
+            <p><b>Imagem</b></p>
+            <input type="text" id="imagemEdit">
+
+            <br><br>
+
+            <button onclick="salvarEdicao()">
+                Salvar
+            </button>
+
+            <button onclick="excluirQuartoAtual()">
+                Excluir
+            </button>
+
+            <button onclick="detalhes.classList.add('oculto')">
+                Fechar
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="modalConfirmar" class="modal oculto">
+
+        <div class="janela-confirmar">
+
+            <i class="fa-solid fa-circle-exclamation icone-alerta"></i>
+
+            <h2>Excluir Quarto</h2>
+
+            <p id="textoConfirmacao">
+                Deseja realmente excluir este quarto?
+            </p>
+
+            <div class="botoes-modal">
+
+                <button class="btn-cancelar"
+                    onclick="modalConfirmar.classList.add('oculto')">
+
+                    Cancelar
+
+                </button>
+
+                <button class="btn-confirmar"
+                    onclick="confirmarExclusao()">
+
+                    Excluir
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="modalMensagem" class="modal oculto">
+
+        <div class="janela-confirmar">
+
+            <i class="fa-solid fa-circle-check icone-sucesso"></i>
+
+            <h2>Sucesso</h2>
+
+            <p id="textoMensagem"></p>
+
+            <div class="botoes-modal">
+
+                <button class="btn-confirmar"
+                    onclick="modalMensagem.classList.add('oculto')">
+
+                    OK
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
