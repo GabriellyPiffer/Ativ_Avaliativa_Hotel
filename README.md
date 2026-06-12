@@ -30,7 +30,7 @@
 ![Print 9](print9.png)
 
 ### Tela 10
-(print10.png)
+![Print 10](print10.png)
 
 ### Tela 11
 ![Print 11](print11.png)
