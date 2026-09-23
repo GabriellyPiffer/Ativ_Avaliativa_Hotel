@@ -71,7 +71,7 @@ Na raiz do projeto, criar um arquivo chamado `.env` com o seguinte conteúdo:
 
 ```env
 PORT=3000
-DATABASE_URL="mysql://root@localhost:3306/mydb"
+DATABASE_URL="mysql://root@localhost:3306/hotelreserva"
 ```
 
 ## 5. Executar as Migrations
