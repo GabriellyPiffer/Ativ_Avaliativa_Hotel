@@ -56,7 +56,7 @@ git clone https://github.com/GabriellyPiffer/Ativ_Avaliativa_Hotel.git
 ## 2. Acessar a Pasta do Projeto
 
 ```bash
-cd hotelreservas
+cd api
 ```
 
 ## 3. Instalar as Dependências
