@@ -51,7 +51,7 @@ O Hotel Reservas é um sistema web desenvolvido para auxiliar no gerenciamento d
 ## 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/MoniqueBabler/hotelreservas.git
+git clone https://github.com/GabriellyPiffer/Ativ_Avaliativa_Hotel.git
 ```
 ## 2. Acessar a Pasta do Projeto
 
